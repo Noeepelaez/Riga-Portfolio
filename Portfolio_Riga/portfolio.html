@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio | Riga</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    body, h1, h2 { font-family: "Montserrat", sans-serif; }
+    body, html { margin: 0; padding: 0; }
+    
+    .gallery {
+      column-count: 3;
+      column-gap: 0;
+    }
+    .gallery img {
+      display: block;
+      width: 100%;
+    }
+    .gallery-padding {
+      column-gap: 12px;
+    }
+    .gallery-padding img {
+      margin-bottom: 12px;
+    }
+    @media (max-width: 600px) {
+      .gallery {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <button onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    ×
+  </button>
+  <div class="w3-bar-block w3-center">
+    <a href="./home.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="./portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
+    <a href="./about-me.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About me</a>
+    <a href="./contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<div>
+  <div class="w3-bar w3-white w3-padding">
+    <a href="./home.html" class="w3-bar-item w3-button w3-hover-white w3-xlarge" style="margin-top: 4px; letter-spacing: 2px;">
+      <b>RIGA</b> <span class="w3-medium w3-text-grey w3-hide-small" style="margin-left: 8px;">| Latvia</span>
+    </a>
+    <button class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+</div>
+
+<main class="w3-content" style="max-width:1500px">
+
+  <header class="w3-center w3-margin-bottom w3-padding-64">
+    <h1 class="w3-xxlarge" style="letter-spacing: 3px;"><b>PORTFOLIO</b></h1>
+    <p class="w3-text-grey" style="letter-spacing: 1px;">A piece of beautiful Riga</p>
+    <p class="w3-padding-16">
+      <button class="w3-button w3-black" onclick="togglePadding()">
+        Toggle Grid Padding
+      </button>
+    </p>
+  </header>
+
+  <div class="gallery gallery-padding" id="myGallery" style="margin-bottom:32px; padding: 0 12px;">
+
+  <img src="img/estatua-de-la-libertad.jpg" alt="Liberty Statue" width="500" height="850" style="object-fit: cover;">
+  <img src="img/bentley-mantsory.jpg" alt="Bentley" width="1100" height="500" style="object-fit: cover; object-position: right;">
+  <img src="img/huellas.jpg" alt="Huellas" width="400" height="250" style="object-fit: cover;">
+  <img src="img/mural-escudos.jpg" alt="Logo" width="1500" height="380" style="object-fit: cover;">
+  <img src="img/catedral-cúpula.jpg" alt="Cathedral-Cupula" width="300" height="300" style="object-fit: cover;">
+  
+  <img src="img/catedral-antigua.jpg" alt="Cathedral-Antigua" width="600" height="400" style="object-fit: cover;">
+  <img src="img/torre.jpg" alt="Tower" width="1100" height="500" style="object-fit: cover;">
+  <img src="img/madreñas.jpg" alt="Shoes" width="700" height="220" style="object-fit: cover;">
+  <img src="img/plaza.jpg" alt="Plaza" width="548" height="365" style="object-fit: cover; object-position: bottom;">
+  <img src="img/cathedral-tower.jpg" alt="Cathedral Tower" width="500" height="850" style="object-fit: cover;">
+  
+  <img src="img/gato-negro.jpg" alt="Black Cat" width="700" height="220" style="object-fit: cover;">
+  <img src="img/ciudad-de-noche.jpg" alt="Night views" width="1500" height="380" style="object-fit: cover;">
+  <img src="img/embajada-rusia.jpg" alt="Russia" width="382" height="260" style="object-fit: cover;">
+  <img src="img/traje-militar.jpg" alt="Militar Suit" width="1100" height="500" style="object-fit: cover; object-position: left;">
+  <img src="img/cascos-militar.jpg" alt="Helmet" width="382" height="260" style="object-fit: cover;">
+  <img src="img/art-nouvou.jpg" alt="Art-nouvou" width="1100" height="500" style="object-fit: cover;">
+  </div>
+
+</main>
+
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:32px">
+  <a href="https://www.instagram.com/noeepelaez/" target = "_blank" style = "text-decoration: none; margin: 0 8px">
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/noé-peláez-miranda-8628353a9/" target="_blank" style="text-decoration: none; margin: 0 8px;">
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </a>
+  <p class="w3-medium">
+    Noé Peláez Miranda
+  </p>
+</footer>
+
+<script>
+function togglePadding() {
+  document.getElementById("myGallery").classList.toggle("gallery-padding");
+}
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>

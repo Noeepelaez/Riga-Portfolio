@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home | Riga Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+  <style>
+    body, h1 { font-family: "Montserrat", sans-serif; }
+    body, html { margin: 0; padding: 0; }
+  </style>
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+  <button onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+    ×
+  </button>
+  <div class="w3-bar-block w3-center">
+    <a href="home.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Portfolio</a>
+    <a href="about-me.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About me</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
+  </div>
+</nav>
+
+<!-- Page Content -->
+<div>
+
+  <!-- Top Bar -->
+  <div class="w3-bar w3-white w3-padding">
+    <a href="home.html" class="w3-bar-item w3-button w3-hover-white w3-xlarge" style="margin-top: 4px; letter-spacing: 2px;">
+      <b>RIGA</b> <span class="w3-medium w3-text-grey w3-hide-small" style="margin-left: 8px;">| Latvia</span>
+    </a>
+    <button class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Header -->
+  <header class="w3-display-container w3-wide" style="height: 65vh;">
+    <img src="img/portada.jpg" alt="Cover Photo" style="width:100%; height:100%; object-fit: cover; object-position: 50% 85%;">
+    
+    <div class="w3-display-middle w3-center w3-animate-opacity">
+      <h1 class="w3-text-white" style="text-shadow: 2px 2px 10px rgba(0,0,0,0.6); letter-spacing: 4px; font-size: 3.5rem;">
+        <b>A weekend in Riga</b>
+      </h1>
+      <p class="w3-text-white" style="text-shadow: 1px 1px 6px rgba(0,0,0,0.6); letter-spacing: 2px; font-size: 1.1rem;">
+        My first Erasmus trip
+      </p>
+      <a href="portfolio.html" class="w3-button w3-transparent w3-border w3-border-white w3-padding-large w3-margin-top w3-hover-white" style="letter-spacing: 2px; transition: 0.3s;">
+        VIEW PORTFOLIO
+      </a>
+    </div>
+  </header>
+
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge">
+  <a href="https://www.instagram.com/noeepelaez/" target = "_blank" style = "text-decoration: none; margin: 0 8px">
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/noé-peláez-miranda-8628353a9/" target="_blank" style="text-decoration: none; margin: 0 8px;">
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </a>
+  <p class="w3-medium">
+    Noé Peláez Miranda
+  </p>
+</footer>
+
+<script>
+function w3_open() {
+  document.getElementById("mySidebar").style.width = "100%";
+  document.getElementById("mySidebar").style.display = "block";
+}
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+
+</body>
+</html>
